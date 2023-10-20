@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>工作流</title>
+  <style>
+    .react-flow__attribution {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root-react-flow"></div>
+  <script type="text/javascript" src="//storage.jd.com/relay/c/iconfont/4/font_600672XbPEY3QllRMI.js"></script>
+  <script type="text/javascript" src="//s3-relay.360buyimg.com/relay/c/iconfont/4/font_390221orLim59C05Vx.js"></script>
+  <!-- 新版rcd图标，旧图标库目前有使用，勿删 -->
+  <script type="text/javascript" src="//s4-relay.360buyimg.com/relay/c/iconfont/5/font_368906BjURXAxDvMR4.js"></script>
+  <script type="text/javascript" src="//s3-relay.360buyimg.com/relay/c/iconfont/5/font_368906twFHjFOMe6Df.js"></script>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- 烛龙监控平台 - 异常捕获、性能监控 sdk文档 http://doc.jd.com/jmfe-book/jssdk/jmfe/js-agent.html-->
+  <!-- <script src="//h5static.m.jd.com/act/jd-jssdk/latest/jd-jssdk.min.js"></script> -->
+  <!-- 一体化里已引入 -->
+  <!-- <script type="text/javascript">
+    // 建议这边包一层 try catch 防止 SDK 内部异常影响业务
+    try {
+      jmfe.jsagentInit({
+        flag: 382, // （必填项，通天塔使用 3，互动业务使用 10，商详图文详情使用 12，其他业务需要去运维平台申请，请联系 liuyuwei8）
+        rate: 1, // optional
+        ignoreErrors: [], //optional
+        ignoreUrls: [], // optional
+        // autoReport // 是否开启自动捕获上报（默认开启，即自动捕获 js 异常并上报) sdk 2.1.1 版本开始支持
+      })
+      // 上报业务错误代码
+      jmfe.jsagentReport(1, 900, '业务配置平台message0421', { extra: 123123 })
+      // 上报代码错误
+      // jmfe.jsagentReportException(err)
+
+      // flag为业务唯一标识，性能和异常监控共用一个flag，例如：通天塔无线flag=16，如需接入，请至烛龙监控平台申请flag：http://dra.jd.com/platform/h5/v2/flag/flag/apply，如有疑问，可联系平台产品刘雨微（erp:liuyuwei8）；另外因部分性能数据需延迟获取，默认8秒后上报性能数据，可能会丢失部分用户的性能数据，不影响整体打分，性能数据上报延迟时间也可以通过performanceReportTime参数修改，详见下方
+      jmfe.profilerInit({ flag: 382 })
+
+    } catch (err) { }
+  </script> -->
+  <!-- env: pre -->
+</body>
+
+</html>

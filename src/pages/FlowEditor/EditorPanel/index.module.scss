@@ -1,0 +1,110 @@
+.customTemplateNode {
+  width: 116px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 8px;
+
+  .customHandle {
+    width: 8px;
+    height: 8px;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .labelIcon {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+    }
+  }
+
+  .canSkip {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 0 6px;
+    color: #33ba99;
+    font-size: 12px;
+    line-height: 20px;
+    background: #edf9f6;
+    border: 1px solid #9dc;
+    border-radius: 4px;
+  }
+}
+
+.customTemplateNode_default {
+  color: var(--color-text-300, #393c5a);
+  background-color: #fff;
+  border: 1px solid #b1b4c5;
+
+  .customHandle {
+    background-color: rgb(0 0 0 / 0%);
+    border-color: rgb(0 0 0 / 0%);
+  }
+
+  &:hover {
+    color: var(--color-brand-normal, #266bf6);
+    border: 1px solid var(--color-brand-normal, #266bf6);
+
+    .customHandle {
+      background-color: var(--color-brand-normal, #266bf6);
+      border-color: #fff;
+    }
+  }
+}
+
+.customTemplateNode_empty {
+  color: var(--color-text-200, #77798e);
+  border: 2px dashed #b1b4c5;
+
+  .customHandle {
+    background-color: #b1b4c5;
+  }
+
+  &:hover {
+    color: var(--color-brand-normal, #266bf6);
+    border: 2px dashed var(--color-brand-normal, #266bf6);
+
+    .customHandle {
+      background-color: var(--color-brand-normal, #266bf6);
+      border-color: #fff;
+    }
+  }
+}
+
+.customTemplateNode_selected {
+  color: var(--color-brand-normal, #266bf6);
+  line-height: 36px;
+  background-color: var(--color-brand-light-normal, #f2f6fe);
+  border: 2px solid var(--color-brand-normal, #266bf6);
+
+  .customHandle {
+    background-color: var(--color-brand-normal, #266bf6);
+  }
+
+}
+
+.customTemplateNode_empty_selected {
+  color: var(--color-brand-normal, #266bf6);
+  background-color: var(--color-brand-light-normal, #f2f6fe);
+  border: 2px dashed var(--color-brand-normal, #266bf6);
+
+  .customHandle {
+    background-color: var(--color-brand-normal, #266bf6);
+  }
+}
+
+.customTemplateNode_invalide {
+  color: red;
+  background-color: #fff;
+  border: 2px dashed red;
+
+  .customHandle {
+    background-color: red;
+  }
+}

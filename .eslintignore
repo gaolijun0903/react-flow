@@ -1,0 +1,6 @@
+/public
+/scripts
+.eslintrc.cjs
+commitlint.config.cjs
+/node_modules
+leorc.js

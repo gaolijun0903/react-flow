@@ -1,0 +1,57 @@
+@font-face {
+  font-weight: normal;
+  font-family: JDZhengHT;
+  font-style: normal;
+  src: url('//storage.360buyimg.com/interview/fonts/JDZhengHT/JDZhengHT-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: JDLangZhengBlod;
+  font-style: normal;
+  src: url('//storage.jd.com/integration-static/web/fonts/JDLangZhengBlod.TTF') format('truetype');
+}
+
+.jd-zheng-ht {
+  font-family: JDZhengHT, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Microsoft YaHei UI', 'Helvetica Neue', Arial,
+    'Hiragino Sans GB', 'Heiti SC', 'Source Han Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin: 0;
+}
+
+.quark-icon.active {
+  fill: $colorPrimary;
+}
+
+.quark-icon {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  vertical-align: -0.15em;
+  transition: all 0.3s;
+  fill: currentColor;
+}
+
+.quark-icon:hover {
+  fill: $colorPrimaryHover;
+}
+
+// 文本超出3行显示省略号
+.text-ellipsis-2-line {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
